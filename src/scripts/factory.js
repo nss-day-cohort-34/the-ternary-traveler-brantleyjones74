@@ -18,8 +18,8 @@ const createTravelerDisplay = {
 
   createDestinationObj: (name, boolean) => {
     return `{
-      name: name,
-      visa_required: boolean
+      name: ${name},
+      visa_required: ${boolean}
     }`;
   },
 
