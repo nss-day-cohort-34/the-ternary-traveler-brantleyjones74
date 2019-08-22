@@ -22,7 +22,31 @@
       "placeId": 1,
       "name": "Local Market",
       "description": "Local market where you can purchase local products and try the local food",
+      "cost": 500,
+      "review": ""
+    },
+    {
+      "id": 2,
+      "placeId": 1,
+      "name": "Local Market 2",
+      "description": "Local market where you can purchase local products and try the local food",
       "cost": 0.0,
+      "review": ""
+    },
+    {
+      "id": 3,
+      "placeId": 2,
+      "name": "Local Market Switz",
+      "description": "Local market where you can purchase local products and try the local food",
+      "cost": 0.0,
+      "review": ""
+    },
+    {
+      "id": 4,
+      "placeId": 3,
+      "name": "Local Market French",
+      "description": "Local market where you can purchase local products and try the local food",
+      "cost": 30,
       "review": ""
     }
   ]
