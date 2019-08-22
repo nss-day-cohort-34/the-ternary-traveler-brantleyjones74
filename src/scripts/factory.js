@@ -61,7 +61,7 @@ const createTravelerDisplay = {
       </fieldset>
       <fieldset>
         <label>Visa Required</label>
-        <select name="visaRequired">
+        <select id="visaSelection" name="visaRequired">
           <option value="true">Yes</option>
           <option value="false">No</option>
         </select>

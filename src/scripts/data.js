@@ -18,7 +18,7 @@ const getData = {
         "Content-Type": "application/json"
       },
       body: JSON.stringify(destinationObj)
-    }).then(entries => entries.json());
+    }).then(destinations => destinations.json());
   },
 
   postNewPointOfInterest: pointOfInterestObj => {

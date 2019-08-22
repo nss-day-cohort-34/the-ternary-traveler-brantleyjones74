@@ -74,8 +74,24 @@ const eventListeners = {
     if (event.target.id.startsWith("addNewTrip")) {
       console.log("add new trip");
       newTripContainer.innerHTML = "";
-      const newTripForm = createTravelerDisplay.createNewTripForm();
+      const newTripForm = factoryMethods.createNewTripForm();
       renderToDom(newTripContainer, newTripForm);
+    } else if (event.target.id.includes("submitNewTrip")) {
+      const newTripInput = document.querySelector("#newTrip__input");
+      const visaSelection = document.querySelector("#visaSelection");
+      const newDestinationObj = factoryMethods.createDestinationObj(
+        newTripInput.value,
+        visaSelection.value
+      );
+      if (newDestinationObj.name === "") {
+        alert("Please give a name.");
+      } else {
+        getData
+          .postNewDestination(newDestinationObj)
+          .then((travelListContainer.innerHTML = ""))
+          .then(renderDestinations)
+          .then(renderInterestPoints);
+      }
     }
   }),
 
