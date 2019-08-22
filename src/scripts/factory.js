@@ -16,6 +16,23 @@ const createTravelerDisplay = {
     return "<p>Visa Required</p>";
   },
 
+  createDestinationObj: (name, boolean) => {
+    return `{
+      name: name,
+      visa_required: boolean
+    }`;
+  },
+
+  createPointOfInterestObj: (placeId, name, description, cost, review) => {
+    return `{
+    placeId: ${placeId},
+    name: ${name},
+    description: ${description},
+    cost: ${cost},
+    review: ${review}
+    }`;
+  },
+
   createInterestSection: interest => {
     return `
     <div id="pointOfInterest__div--${interest.id}">
